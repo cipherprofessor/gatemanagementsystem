@@ -1,0 +1,105 @@
+/* Container and Title */
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 2rem;
+  }
+  
+  /* Card Styles */
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+  }
+  
+  .cardContent {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .cardTextContainer {
+    margin-left: 1rem;
+  }
+  
+  .cardTitle {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+  }
+  
+  .cardValue {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  /* Quick Actions */
+  .quickActions {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+  }
+  
+  .quickActionsTitle {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .actionButton {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .actionButtonPrimary {
+    background-color: #2563eb;
+    color: #ffffff;
+  
+    &:hover {
+      background-color: #1d4ed8;
+    }
+  }
+  
+  .actionButtonSecondary {
+    background-color: #f3f4f6;
+    color: #374151;
+  
+    &:hover {
+      background-color: #e5e7eb;
+    }
+  }
+  

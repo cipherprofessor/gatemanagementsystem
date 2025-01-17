@@ -4,14 +4,23 @@ import { format } from 'date-fns';
 import { Clock, Calendar } from 'lucide-react';
 
 interface GatepassCardProps {
+
   gatepass: {
+
     id: string;
+
     purpose: string;
+
     status: string;
-    validFrom: string;
+
+    validFrom: Date;
+
     validUntil: string;
+
     qrCode: string;
+
   };
+
 }
 
 export default function GatepassCard({ gatepass }: GatepassCardProps) {

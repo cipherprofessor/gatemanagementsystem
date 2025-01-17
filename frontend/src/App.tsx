@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Layout from '../src/components/Layout/layout';
+import Layout from '../../frontend/src/components/Layout/Layout';
 import GatepassForm from './components/Bolt/GatePass/GatepassForm';
 import Dashboard from './pages/Dashboard/Dashboard';
+import { SidebarDemo } from './components/Accenture/SlideComponent/SidebarDemo';
 
 
 export default function App() {
@@ -10,9 +11,9 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={
-          <Layout>
-            <Dashboard />
-          </Layout>
+          // <Layout>
+            <SidebarDemo />
+          // </Layout>
         } />
         <Route path="/create-pass" element={
           <Layout>
