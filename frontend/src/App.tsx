@@ -1,15 +1,41 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import GateManagement from './pages/GateManagement';
-import './styles/main.module.scss';
+import React from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Layout from '../src/components/Layout/layout';
+import GatepassForm from './components/Bolt/GatePass/GatepassForm';
+import Dashboard from './pages/Dashboard/Dashboard';
 
-const App: React.FC = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/gate-management" element={<GateManagement />} />
-    </Routes>
-  </Router>
-);
 
-export default App;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <Layout>
+            <Dashboard />
+          </Layout>
+        } />
+        <Route path="/create-pass" element={
+          <Layout>
+            <GatepassForm />
+          </Layout>
+        } />
+        <Route path="/visitors" element={
+          <Layout>
+            <div className="p-4">Visitors Page (Coming Soon)</div>
+          </Layout>
+        } />
+        <Route path="/passes" element={
+          <Layout>
+            <div className="p-4">Passes Page (Coming Soon)</div>
+          </Layout>
+        } />
+        <Route path="/settings" element={
+          <Layout>
+            <div className="p-4">Settings Page (Coming Soon)</div>
+          </Layout>
+        } />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}

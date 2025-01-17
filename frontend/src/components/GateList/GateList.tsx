@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import GateItem from '../';
-import styles from '../styles/main.module.scss';
+import GateItem from '../GateItem/GateItem';
+import styles from './GateList.module.scss';
 import React from 'react';
 
 interface Gate {

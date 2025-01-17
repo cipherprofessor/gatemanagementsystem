@@ -1,6 +1,6 @@
-import GateEntryForm from '../components/GateEntryForm';
-import GateList from '../components/GateList';
-import styles from '../styles/main.module.scss';
+import GateList from '../../components/GateList/GateList';
+import GateEntryForm from '../../components/GateEntryForm/GateEntryForm';
+import styles from './GateManagement.module.scss';
 
 const GateManagement: React.FC = () => (
   <div className={styles.gateManagement}>

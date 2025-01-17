@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './';
+import styles from './GateEntryForm.module.scss';
 import React from 'react';
 
 interface GateData {

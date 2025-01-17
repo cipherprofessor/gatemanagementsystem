@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from '../styles/main.module.scss';
+import styles from './Home.module.scss';
 
 const Home: React.FC = () => (
   <div className={styles.home}>
